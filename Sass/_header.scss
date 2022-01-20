@@ -1,0 +1,41 @@
+#grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows:200px 60px auto auto auto;
+    grid-template-areas:
+        "header"
+        "menu"
+        "contenido1"
+        "contenido2"
+        "footer";
+    .header{
+        background-color:#ff6090 ;
+        grid-area: header;
+        .transformacion-logo{
+            @keyframes llamativo {
+                0%{
+                    background-color: #ffb2ff;
+                }
+                50%{
+                    background-color: palevioletred;
+                }
+                100%{
+                    background-color: magenta;
+                }
+            }
+            width: 100%;
+            background-color: #6a0080;
+            padding: 60px 0;
+            animation: llamativo 2s linear 0s infinite;
+            display: flex;
+            justify-content: center;
+            .header-logo{
+                width: 280px;
+                height: 85px;
+                background-image:url(../Images/logo.png);
+                background-size: contain;
+                background-repeat: no-repeat;                
+            }
+        }
+    }
+}   

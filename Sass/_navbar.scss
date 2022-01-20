@@ -1,0 +1,48 @@
+nav{
+    background-color: #c94f7c;
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    ul{
+        display: flex;
+        justify-content: space-evenly; 
+        flex-wrap: wrap;
+        li{
+            display: inline-block;
+            width: 25%;
+            position:relative;
+            font-size: 20px;
+            letter-spacing: 1px;
+            text-align: center;
+            p{
+                font-size: 25px;
+                font-family: $estilo-letra-ppal;
+            }
+            
+        &:hover{
+            ul{
+                position: absolute;
+                display:block;
+                background-color:deeppink;
+            }
+        }
+            ul{
+                position: relative;
+                display: none;
+                li{
+                    display: block;
+                    padding: 10px;
+                    color: white;
+                    
+                    a{
+                        color: #ffffff;
+                    }
+                    a:hover{
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+}

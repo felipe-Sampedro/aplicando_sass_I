@@ -1,0 +1,16 @@
+footer{
+    background-color: $bg-footer;
+    grid-area: footer;
+/*     font-family: 'Shadows Into Light', cursive; */
+    display: flex;
+    gap: 30px;
+    .info-pie{
+        padding: 2%;
+        p{
+            padding: 1px;
+            font-size: 25px;
+            font-family:'Shadows Into Light', cursive;
+        }
+    }
+}
+
