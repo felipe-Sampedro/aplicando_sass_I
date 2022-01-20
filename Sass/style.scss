@@ -185,7 +185,7 @@ footer{
 
     }
 
-/*     nav{
+    nav{
         display: flex;
         align-items: flex-start;
         ul{
@@ -196,15 +196,18 @@ footer{
             li{
                 &:hover{
                     ul{
-                        position: relative;
+                        position:relative;
                         background-color:deeppink;
                         width: 180px;
                     }
                 }
+                ul{
+                    display: block;
+                }
             }    
         }
     }
- */
+
 
 }
 
@@ -252,6 +255,14 @@ footer{
             margin:0%; 
             flex-wrap:nowrap;
             li{
+                &:hover{
+                    ul{
+                        position: absolute;
+                    }
+                }
+                ul{
+                    display:none;
+                }
                 p{
                     font-family: $estilo-letra-scd;
                 }
